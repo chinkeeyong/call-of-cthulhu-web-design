@@ -26,12 +26,6 @@ p {
     padding-right: 200px;
 }
 
-@media screen and (max-width: 1024px){
-    [class^="content"] {
-        padding: 100px;
-    }
-}
-
 .content-document {
     background-image: url("images/newspaper_texture.jpg");
     /* https://i.pinimg.com/originals/a7/d8/a3/a7d8a324ed4206a8fb6864ba0c168511.jpg */
@@ -235,4 +229,55 @@ div.document-body p {
 
 .ending-page {
     padding-bottom: 35%;
+}
+
+@media screen and (max-width: 1024px){
+    [class^="content"] {
+        padding: 100px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    [class^="content"] {
+        padding: 50px;
+        font-size: smaller;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+    }
+
+    .chapter-numeral {
+        font-size: 36px;
+    }
+
+    .chapter-title {
+        font-size: 30px;
+    }
+
+    .chapter-initial-letter {
+        font-size: 56px;
+        line-height: 36px;
+        padding-top: 7px;
+        padding-right: 4px;
+    }
+
+    .document-header {
+        font-size: 20px;
+    }
+
+    .document-headline {
+        font-size: 36px;
+    }
+
+    .document-body-initial-letter {
+        font-size: 64px;
+        line-height: 36px;
+        padding-top: 12px;
+        padding-right: 4px;
+    }
 }
