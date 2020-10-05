@@ -26,9 +26,15 @@ p {
     padding-right: 200px;
 }
 
+@media screen and (max-width: 1024px){
+    [class^="content"] {
+        padding: 100px;
+    }
+}
+
 .content-document {
-    background-image: url("images/vector-old-paper-texture-background.webp");
-    /* https://static.vecteezy.com/system/resources/previews/000/121/106/original/vector-old-paper-texture-background.jpg */
+    background-image: url("images/newspaper_texture.jpg");
+    /* https://i.pinimg.com/originals/a7/d8/a3/a7d8a324ed4206a8fb6864ba0c168511.jpg */
     background-size: cover;
     background-position: center;
 } 
@@ -48,10 +54,19 @@ p {
     background-color: #c4c4aa;
 }
 
-@media screen and (max-width: 1024px){
-    .content {
-        padding: 100px;
-    }
+.content-flashback-finale {
+    color: #8d978d;
+    background-color: #1e201e;
+}
+
+.content-flashback-finale-1 {
+    color: #809680;
+    background-color: #121612;
+}
+
+.content-flashback-finale-2 {
+    color: #6a886a;
+    background-color: #000000;
 }
 
 .title-page {
@@ -116,24 +131,49 @@ p {
 }
 
 .document-paraphrase {
-    color: black;
     font-family: 'News Cycle', sans-serif;
+    color: black;
     font-size: 20px;
     font-weight: bolder;
 }
 
-.document {
+.manuscript {
     font-family: 'Special Elite', sans-serif;
     text-align: center;
     color: black;
     opacity: 80%;
 }
 
-.document-headline {
+.document-header {
     font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color: black;
+    opacity: 80%;
+}
+
+.document-headline {
+    font-size: 56px;
+    margin-bottom: 12px;
+}
+
+.document-body {
+    font-family: 'News Cycle', sans-serif;
+}
+
+.document-body-initial-letter {
+    font-size: 76px;
+    float: left;
+    line-height: 48px;
+    padding-top: 12px;
+    padding-right: 4px;
 }
 
 div.chapter p {
+    margin-top: 24px;
+}
+
+div.document-body p {
     margin-top: 24px;
 }
 
@@ -157,6 +197,13 @@ div.chapter p {
     animation: black-speech-color-change 0.1s infinite;
 }
 
+.black-speech-dark {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #406e42;
+    animation: black-speech-color-change-dark 0.1s infinite;
+}
+
 .black-speech-safe {
     font-family: 'Cormorant Garamond', serif;
     color: #406e42;
@@ -170,4 +217,22 @@ div.chapter p {
     75% {
         text-shadow: 1px 1px#00ac00;
     }
+}
+
+@keyframes black-speech-color-change-dark {
+    50% {
+        color: #4e8350;
+        text-shadow: 1px 1px#394739;
+    }
+    75% {
+        text-shadow: 1px 1px#4d694d;
+    }
+}
+
+.finale-content-divider {
+    padding-top: 100%;
+}
+
+.ending-page {
+    padding-bottom: 35%;
 }
