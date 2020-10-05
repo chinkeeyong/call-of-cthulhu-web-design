@@ -64,7 +64,7 @@ p {
 }
 
 .title-page {
-    padding-top: 18%;
+    padding-top: 20%;
 }
 
 .title {
@@ -79,6 +79,10 @@ p {
     font-size: 36px;
     text-align: center;
     font-variant: small-caps;
+}
+
+.title-quote-divider {
+    padding-top: 50%;
 }
 
 .chapter-title-page {
@@ -164,16 +168,18 @@ p {
 }
 
 div.chapter p {
-    margin-top: 24px;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 div.document-body p {
-    margin-top: 24px;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 .inline-paragraph-image {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     width: 100%;
     object-fit: cover;
 }
@@ -182,6 +188,22 @@ div.document-body p {
     display: block;
     width: 100%;
     object-fit: cover;
+}
+
+.inline-intro-image {
+    display: block;
+    width: 30%;
+    object-fit: cover;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.inline-finale-image {
+    display: block;
+    width: 30%;
+    object-fit: cover;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
 .black-speech {
