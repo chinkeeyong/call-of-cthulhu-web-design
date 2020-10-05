@@ -1,0 +1,173 @@
+﻿body {
+    margin: 0px;
+    font-family: 'EB Garamond', serif;
+    font-size: 24px;
+    color: #1b1b1b;
+    background-color: #202c2c;
+}
+
+p {
+    margin: 0px;
+}
+
+.wrapper {
+    background-color: #e2e2e0;
+    max-width: 1280px;
+	margin: auto;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+}
+
+[class^="content"] {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.content-document {
+    background-image: url("images/vector-old-paper-texture-background.webp");
+    /* https://static.vecteezy.com/system/resources/previews/000/121/106/original/vector-old-paper-texture-background.jpg */
+    background-size: cover;
+    background-position: center;
+} 
+
+.content-flashback {
+    color: #3f2727;
+    background-color: #d6d6cd;
+}
+
+.content-flashback-1 {
+    color: #2f352f;
+    background-color: #cfcfbc;
+}
+
+.content-flashback-2 {
+    color: #2a312a;
+    background-color: #c4c4aa;
+}
+
+@media screen and (max-width: 1024px){
+    .content {
+        padding: 100px;
+    }
+}
+
+.title-page {
+    padding-top: 18%;
+}
+
+.title {
+    font-size: 64px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.subtitle {
+    padding-top: 8px;
+    padding-bottom: 24px;
+    font-size: 36px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.chapter-title-page {
+    padding-top: 70%;
+    padding-bottom: 70%;
+}
+
+.chapter-numeral {
+    font-size: 48px;
+    text-align: center;
+}
+
+.chapter-title {
+    font-size: 40px;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.chapter-initial-letter {
+    font-size: 68px;
+    float: left;
+    line-height: 48px;
+    padding-top: 6px;
+    padding-right: 4px;
+}
+
+.quote {
+    max-width: 960px;
+    padding: 16px;
+	margin: auto;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.quote-text {
+    font-style: italic;
+}
+
+.quote-attribution {
+    text-align: right;
+    font-variant: small-caps;
+}
+
+.document-paraphrase {
+    color: black;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.document {
+    font-family: 'Special Elite', sans-serif;
+    text-align: center;
+    color: black;
+    opacity: 80%;
+}
+
+.document-headline {
+    font-size: 30px;
+}
+
+div.chapter p {
+    margin-top: 24px;
+}
+
+.inline-paragraph-image {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.inline-full-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.black-speech {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: #283a29;
+    animation: black-speech-color-change 0.1s infinite;
+}
+
+.black-speech-safe {
+    font-family: 'Cormorant Garamond', serif;
+    color: #406e42;
+}
+
+@keyframes black-speech-color-change {
+    50% {
+        color: #406e42;
+        text-shadow: 1px 1px#00ff00;
+    }
+    75% {
+        text-shadow: 1px 1px#00ac00;
+    }
+}
